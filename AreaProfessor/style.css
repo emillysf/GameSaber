@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.container{
+	background-color: #773FFF;
+    width: 350px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgb(66, 66, 64);
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body.dark {
+	--light: #0C0C1E;
+	--grey: #060714;
+	--dark: #FBFBFB;
+}
+
+body {
+	background: var(--grey);
+	overflow-x: hidden;
+	overflow: hidden;
+	width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom left, #e9e6a8, #f1eda0);
+}
+
+
+#saida{
+    margin-top: 10%;
+    margin-left: 0;
+    margin-right: 80%;
+}
+
+/* MAIN */
+#perfil main {
+	width: 100%;
+	padding: 36px 24px;
+	font-family: var(--poppins);
+	max-height: calc(100vh - 500px);
+	overflow:scroll;
+}
+
+#perfil main::-webkit-scrollbar{
+	width: 10px;
+	height: 30px;
+	border-radius: 20px;
+}
+
+#perfil main::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+#perfil main::-webkit-scrollbar-thumb{
+	background: #773FFF;
+	border-radius: 20px;
+	height: 1px;
+}
+
+#perfil main::-webkit-scrollbar-thumb:hover{
+	background: #9366FF;
+}
+
+#perfil main .head-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+#perfil main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: var(--dark);
+}
+#perfil main .head-title .left .breadcrumb {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+#perfil main .head-title .left .breadcrumb li {
+	color: var(--dark);
+}
+#perfil main .head-title .left .breadcrumb li a {
+	color: var(--dark-grey);
+	pointer-events: none;
+}
+#perfil main .head-title .left .breadcrumb li a.active {
+	color: var(--blue);
+	pointer-events: unset;
+}
+#perfil main .head-title .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	background: var(--blue);
+	color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+}
+
+#perfil main #box-info  {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 15px;
+	margin-top: 10px;
+}
+#perfil main #box-info li { /*Turmas*/
+	padding: 15px;
+	background: var(--light);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	height: 100px;
+	background-color: #9366FF;
+}
+#perfil main #box-info li .bx { /*Foto dentro das turmas*/
+	width: 60px;
+	height: 60px;
+	border-radius: 10px;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#progress-bar {
+	width: 100%;
+	background-color: #f1f1f1;
+	border: 1px solid #ccc;
+	height: 30px;
+  }
+  
+  #progress {
+	width: 0%;
+	height: 100%;
+	background-color: #4CAF50;
+  }
+
+
+.box-info {
+	background-color: lightgray;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 15px;
+	margin-top: 10px;
+	padding: 15px;
+	background: var(--light);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	height: 100px;
+	background-color: #9366FF;
+}
+
+.h3-title{
+    color: rgb(34, 32, 32);
+    margin-bottom: 30px;
+}
+
+.delete-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    background-color: #9366FF;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 30px;
+	margin-left: 45px;
+	margin-bottom: 5px;
+}
+
+.rename-button {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+    background-color: #9366FF;
+	border: none;
+	padding: 5px;
+	cursor: pointer;
+	outline: none;
+}
+
+.save-button {
+	background-color: #9366FF;
+    color: white;
+    border: none;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 1px;
+    cursor: pointer;
+    border-radius: 50px;
+	height: 30px;
+	width: 30px;
+	align-items: center;
+}
+.save-button:hover {
+	background-color: #008000;
+}
+
+.rename-input{
+	border-radius: 5px;
+	border: none;
+	height: 30px;
+	width: 150px;
+	outline: none;
+	padding: 10px;
+}
+
+.h3-title{
+	color: rgb(34, 32, 32);
+	margin-bottom: 30px;
+}
+
+.rename-button{
+	border-radius: 30px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+}
+
+.add-button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin-top: 10px;
+	cursor: pointer;
+	border-radius: 25px;
+}
+
+.add-button:hover {
+	background-color: #45a049;
+}
+
+#perfil main .table-data {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: var(--dark);
+}
+#perfil main .table-data > div {
+	border-radius: 20px;
+	background: var(--light);
+	padding: 24px;
+	overflow-x: auto;
+}
+#perfil main .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+#perfil main .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+#perfil main .table-data .head .bx {
+	cursor: pointer;
+}
+
+#perfil main .table-data .order {
+	flex-grow: 1;
+	flex-basis: 500px;
+}
+#perfil main .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+#perfil main .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 13px;
+	text-align: left;
+	border-bottom: 1px solid var(--grey);
+}
+#perfil main .table-data .order table td {
+	padding: 16px 0;
+}
+#perfil main .table-data .order table tr td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
+}
+#perfil main .table-data .order table td img {
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+#perfil main .table-data .order table tbody tr:hover {
+	background: var(--grey);
+}
+#perfil main .table-data .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 16px;
+	color: var(--light);
+	border-radius: 20px;
+	font-weight: 700;
+}
+
+
+@media screen and (max-width: 768px) {
+	#sidebar {
+		width: 200px;
+	}
+
+	#perfil {
+		width: calc(100% - 60px);
+		left: 200px;
+	}
+
+	#perfil nav .nav-link {
+		display: none;
+	}
+}
+
+#perfil{
+	position: absolute;
+    top: 30%;
+	height: 455px;
+	width: 350px;
+	border-radius: 40px 40px 0px 00px;
+	background:#8AF194;
+
+}
+.redirect-button{
+    background: #9366FF; 
+    border-radius: 10px;
+    height: 50px;
+    width: 20px;
+}
+
+.config{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px; /* altura desejada da div.config */
+        background-color: #9366FF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px 25px 0 0;
+}
+
+.config button {
+        margin: 0 20px; /* Adicione margem horizontal */
+        margin-top: 2px;
+        border-style: none;
+        background:#9366FF;
+        font-size: larger;
+}
+
+.partida{
+    background: #F5BB3D;
+    border-style: none;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 25px;
+    right: -10px;
+    height: 30px;
+    width: 60px;
+    font-size:small;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.partida:hover{
+    background: #f7c965;
+}
+
+.sair{
+    margin-top: 10%;      
+    margin-left: -75%;  
+}
+
+.turmaFatec{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+.box-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.order-button {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: #9366FF;
+    border-style: none;
+    width: 30px;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.box-partida {
+	background-color: lightgray;
+	margin-bottom: 10px;
+	padding: 10px;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 15px;
+	margin-top: 1px;
+	padding: 15px;
+	background: var(--light);
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	height: 100px;
+	background-color: #9366FF;
+}
+
+#parti main::-webkit-scrollbar{
+	width: 10px;
+	height: 30px;
+	border-radius: 20px;
+}
+
+#parti main::-webkit-scrollbar-track{
+	background: transparent;
+}
+
+#parti main::-webkit-scrollbar-thumb{
+	background: #432686;
+	border-radius: 20px;
+	height: 1px;
+}
+
+#parti main::-webkit-scrollbar-thumb:hover{
+	background: #9366FF;
+}
+
+#parti main {
+	width: 100%;
+	padding: 36px 24px;
+	font-family: var(--poppins);
+	max-height: calc(100vh - 400px);
+	overflow:scroll;
+}
+
+.btnPartida{
+    border-style: none;
+    border-radius: 25px;
+    background-color: #4CAF50;
+    height: 30px;
+    width: 90px;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+.btnPartida:hover{
+    background-color: #8AF194;
+}
