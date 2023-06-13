@@ -12,7 +12,7 @@ O que fazer quando entrar no login?
 código de verificação, de acordo com o nome que você cadastrou no formulário, você pega o código e coloque para fazer o cadastro do professor) 
 
 2. O cadastro do aluno é direto pelo aplicativo mesmo, o aplicativo ainda não está com todas suas funcionalidades, então os perfis
-serão já com nomes fixos. Na tela do aluno é possivel ver os jogos que o aluno pode jogar, mas... 😬😬😬😬
+serão já com nomes fixos. Na tela do aluno é possivel ver os jogos que o aluno pode jogar, mas... 😬
 ATENÇÂO: O jogo feito não está linkado pois foi feito em c#, para que voce possa jogar ele, você precisa entrar na pasta Jogo de matemática e executa-lo.
 
 3. Após você conseguir logar com a conta do professor, na primeira tela é possivel adicionar turmas. 
@@ -23,4 +23,4 @@ ver os resultados do aluno.
 
 Fim. 
 
-😊😊😊😊😊😊😊😊😊😊😊😊😊
+
