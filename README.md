@@ -3,7 +3,6 @@
 
 Este é sistema para auxilio na alfabetização de crianças.
 
-
 ## Funcionalidades
 
 - Criar cadastro para o professor e para a criança;
