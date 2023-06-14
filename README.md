@@ -1,26 +1,36 @@
-# GameSaber
 
-Oii, esse é nosso aplicativo Game do Saber. Aqui estão as informações que você precisa saber:
+# Game do Saber
 
-1. Ele foi feito todo em PHP, portanto o github não terá suporte para usarmos o pages. 😌
-2. Mas... Utilizando o xampp é possivel voce abrir esses arquivos. 😁
-3. É importante você saber que é necessário o mysql, já que esses arquivos precisam de um banco de dados.
+Este é sistema para auxilio na alfabetização de crianças.
 
-O que fazer quando entrar no login?
-1. Se você conseguiu entrar nessa parte, no cadastra-se é possivel se cadastrar como aluno ou como professor 
-(Para se cadastrar como professor você terá que preencher o formulário no site, no banco de dados criado, terá a parte de 
-código de verificação, de acordo com o nome que você cadastrou no formulário, você pega o código e coloque para fazer o cadastro do professor) 
 
-2. O cadastro do aluno é direto pelo aplicativo mesmo, o aplicativo ainda não está com todas suas funcionalidades, então os perfis
-serão já com nomes fixos. Na tela do aluno é possivel ver os jogos que o aluno pode jogar, mas... 😬
-ATENÇÂO: O jogo feito não está linkado pois foi feito em c#, para que voce possa jogar ele, você precisa entrar na pasta Jogo de matemática e executa-lo.
+## Funcionalidades
 
-3. Após você conseguir logar com a conta do professor, na primeira tela é possivel adicionar turmas. 
-4. Ao clicar na seta de turmas, você será direcionado a uma tela com a opção de adicionar alunos.
-5. Após adicionar alunos, você pode clicar em no botão A-Z para reorganizar em ordem alfabetica. 
-6. Ao clicar na seta do aluno, você entra no perfil dele e consegue ver suas ultimas partidas e clicar no avaliar para
-ver os resultados do aluno.
+- Criar cadastro para o professor e para a criança;
+- Jogo de matemática para criança;
+- Adicionar turmas ao perfil do professor;
+- Adicionar Alunos as turmas do professor.
 
-Fim. 
+
+## O que precisa para rodar esse projeto?
+
+- MySql
+- Xampp
+
+(Necessário rodar projeto do site antes para a criação do BD)
+
+    
+## Como rodar o projeto?
+
+- É necessário que a pasta do projeto esteja com o nome GameSaber para que as referencias dentro do código funcionem.
+- Coloque a pasta no htdocs do xampp e de start no apache e no mysql
+- Entre no localhost através do seu navegador
+- Caso o site da equipe não tenha sido rodado na sua máquina, será necessário ter um BD com o nome gamecrud.
+- Para se cadastrar como professor é necessário se cadastrar no site primeiro, e pegar o código na tabela verificação do banco de dados (pode ser atraves do admin do mysql no xampp).
+- Cadastro do aluno é feito direto no sistema.
+
+Jogo de matemática
+- O jogo foi desenvolvido com C#, para rodar ele só entrar na build da pasta e abrir o executavel com nome PI.
+
 
 
